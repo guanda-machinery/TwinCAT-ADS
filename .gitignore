@@ -361,4 +361,29 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/TwinCAT Project3.~u
+# TwinCAT backup files
+*.~u
+*.tsproj.bak
+*.bak
+
+# TwinCAT trial license files
+*.tclrs
+
+# TwinCAT compiled/generated directories
+_Boot/
+_Libraries/
+_CompileInfo/
+_ModuleInstall/
+
+# TwinCAT compiled/generated files
+*.compileinfo
+*.compiled-library*
+*.tmc
+*.tpy
+LineIDs.dbg
+*.TcLiveWatch
+*.tcmrepo
+
+# TwinCAT HMI, filter downloaded JSON schema files
+json-schema.org
+

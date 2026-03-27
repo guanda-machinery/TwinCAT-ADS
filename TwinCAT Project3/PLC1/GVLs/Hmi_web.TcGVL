@@ -128,7 +128,6 @@ Jog_Ga: LaserJog:=(
 	Preview_Enable:Bool;
  
  
- 
 
     //動力滾輪
     Roller_Fwd:  BOOL;
