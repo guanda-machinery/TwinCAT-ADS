@@ -387,3 +387,4 @@ LineIDs.dbg
 # TwinCAT HMI, filter downloaded JSON schema files
 json-schema.org
 
+/TwinCAT Project3/TwinCAT Project3.tsproj.bak
