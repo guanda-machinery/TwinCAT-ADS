@@ -120,10 +120,25 @@ Jog_Ga: LaserJog:=(
 	Auto_ProjectWorkOrder_uuid: STRING;
 	// 排版專案 
     Start_WorkOrder_UUID: STRING;
-	// 加工data_uuid
-    Process_Data_UUID: STRING;
-	// 雷標動作啟動 
-    Process_Data_UUID_Start: BOOL;
+	
+	// Top 右 加工data_uuid
+    Process_Data_UUID_A: STRING;
+	// Top 右 雷標動作啟動 
+    Process_Data_UUID_A_Start: BOOL;
+	// Front 上 加工data_uuid
+    Process_Data_UUID_B: STRING;
+	// Front 上 雷標動作啟動 
+    Process_Data_UUID_B_Start: BOOL;
+	// Bottom 左 加工data_uuid
+    Process_Data_UUID_C: STRING;
+	// Bottom 左 雷標動作啟動 
+    Process_Data_UUID_C_Start: BOOL;
+	// Behind 下 加工data_uuid 
+    Process_Data_UUID_D: STRING;
+	// Behind 下 雷標動作啟動 
+    Process_Data_UUID_D_Start: BOOL;
+	
+
 	// 預覽模式
 	Preview_Enable:BOOL;
 	// 原點復歸
