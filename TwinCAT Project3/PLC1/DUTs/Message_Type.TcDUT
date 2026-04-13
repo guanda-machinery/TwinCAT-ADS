@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.18">
+  <DUT Name="Message_Type" Id="{464ddd42-b218-4403-beb8-3bbdf282a820}">
+    <Declaration><![CDATA[TYPE Message_Type :
+STRUCT
+	  sv_iActAlarmCount: INT; ////錯誤數量
+      sv_Alarms: STRING; //警告(陣列)
+      sv_bMessageResetAll: BOOL; //重置所有警報 boolean
+      sv_bMessageQuitAll: BOOL; //確認所有警報 boolean
+      sv_bMessageResetSelected: BOOL; //重置選定的警報 boolean
+      sv_bMessageQuitSelected: BOOL; //確認選定的警報 boolean
+      sv_iSelectedAlarmIndex: INT; //清除選定的警報 int
+      sv_bMessageUpdateAlarms: BOOL; //更新警報列表的觸發器 boolean
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

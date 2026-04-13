@@ -3,7 +3,9 @@
   <GVL Name="Hmi_web" Id="{eae48d12-bfed-42b4-9a4e-65b8156f88d3}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	// 點動速度
     Jog_Speed: INT;
+	
  Oil_Pump:BOOL;
 Jog_FxA:Jog_FxA_Type:= (
       H_Open:= FALSE,
@@ -196,6 +198,19 @@ Jog_Ga: LaserJog:=(
     //料架動作-頂料柱下降
     StopPin_Down: BOOL;
     StopPin_Down_S: BOOL;
+
+MessageVar1:Message_Type:=( 
+      sv_iActAlarmCount:=0, //錯誤數量
+      sv_Alarms:= '', //警告(陣列)
+      sv_bMessageResetAll:= FALSE, //重置所有警報 boolean
+      sv_bMessageQuitAll:= FALSE, //確認所有警報 boolean
+      sv_bMessageResetSelected:= FALSE, //重置選定的警報 boolean
+      sv_bMessageQuitSelected:= FALSE, //確認選定的警報 boolean
+      sv_iSelectedAlarmIndex:= 0, //清除選定的警報 int
+      sv_bMessageUpdateAlarms:= FALSE //更新警報列表的觸發器 boolean
+    );
+
+
 
 END_VAR]]></Declaration>
   </GVL>

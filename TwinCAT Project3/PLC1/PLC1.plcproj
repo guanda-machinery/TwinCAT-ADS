@@ -30,6 +30,9 @@
     <Compile Include="DUTs\LaserVar.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\Message_Type.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\MyCustomType.TcDUT">
       <SubType>Code</SubType>
     </Compile>
