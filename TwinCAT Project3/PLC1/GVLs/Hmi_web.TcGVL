@@ -113,6 +113,35 @@ Jog_Ga: LaserJog:=(
      Laser_Blow:= FALSE,
      Laser_Cover:= FALSE);
 
+	 // 左側-XYZ座標
+	 Ga_Pos:XYZ_Point:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+		);
+	 // 上方-XYZ座標
+	Gb_Pos:XYZ_Point:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+		);
+	 // 右側-XYZ座標
+	Gc_Pos:XYZ_Point:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+		);
+	 // 下方-XYZ座標
+	Gd_Pos:XYZ_Point:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+		);
+	 
+	 
+	 
+	 
+	 
 
  	//*自動加工 */
     Auto_Start:  BOOL;
