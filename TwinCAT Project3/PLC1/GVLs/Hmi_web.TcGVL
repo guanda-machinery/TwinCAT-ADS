@@ -5,55 +5,54 @@
 VAR_GLOBAL
 	// 點動速度
     Jog_Speed: INT;
+	// 油泵
+	Oil_Pump:BOOL;
 	
- Oil_Pump:BOOL;
-Jog_FxA:Jog_FxA_Type:= (
-      H_Open:= FALSE,
-      H_Open_S:= FALSE,
-      H_Close:= FALSE,
-      H_Close_S:= FALSE,
+	Jog_FxA:Jog_FxA_Type:= (
+      	H_Open:= FALSE,
+      	H_Open_S:= FALSE,
+      	H_Close:= FALSE,
+      	H_Close_S:= FALSE,
 
-      H_Hold:= FALSE,
-      H_Hold_S:= FALSE,
+      	H_Hold:= FALSE,
+      	H_Hold_S:= FALSE,
 
-      V_Open:= FALSE,
-      V_Open_S:= FALSE,
-      V_Close:= FALSE,
-      V_Close_S:= FALSE,
+      	V_Open:= FALSE,
+      	V_Open_S:= FALSE,
+      	V_Close:= FALSE,
+      	V_Close_S:= FALSE,
    
-     P:= FALSE,
-      P_S:= FALSE,
-      N:= FALSE,
-      N_S:= FALSE,
-      P_Fast:= FALSE,
-      P_Fast_S:= FALSE,
-      N_Fast:= FALSE,
-      N_Fast_S:= FALSE
+     	P:= FALSE,
+      	P_S:= FALSE,
+      	N:= FALSE,
+      	N_S:= FALSE,
+      	P_Fast:= FALSE,
+      	P_Fast_S:= FALSE,
+      	N_Fast:= FALSE,
+      	N_Fast_S:= FALSE
     );
  
  
-Jog_FxB : Jog_FxB_Type := (
-       H_Open:= FALSE,
-      H_Open_S:= FALSE,
-      H_Close:= FALSE,
-      H_Close_S:= FALSE,
+	Jog_FxB : Jog_FxB_Type := (
+		H_Open:= FALSE,
+      	H_Open_S:= FALSE,
+      	H_Close:= FALSE,
+      	H_Close_S:= FALSE,
 
-      H_Hold:= FALSE,
-      H_Hold_S:= FALSE,
+      	H_Hold:= FALSE,
+      	H_Hold_S:= FALSE,
 
-      V_Open:= FALSE,
-      V_Open_S:= FALSE,
-      V_Close:= FALSE,
-      V_Close_S:= FALSE
-
-    
-);
+      	V_Open:= FALSE,
+      	V_Open_S:= FALSE,
+      	V_Close:= FALSE,
+      	V_Close_S:= FALSE
+	);
 
 
  
 
-//右軸
-Jog_Ga: LaserJog:=( 
+	//右軸
+	Jog_Ga: LaserJog:=( 
      X_P:= FALSE,
      X_N:= FALSE,
      X_H:= FALSE,
@@ -66,8 +65,12 @@ Jog_Ga: LaserJog:=(
      Laser_Preview:=FALSE,
      Laser_Preview_Select:= 1,
      Laser_Blow:= FALSE,
-     Laser_Cover:= FALSE);
-//上軸
+	 Pos:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+	));
+	//上軸
     Jog_Gb: LaserJog:=( 
      X_P:= FALSE,
      X_N:= FALSE,
@@ -81,8 +84,12 @@ Jog_Ga: LaserJog:=(
      Laser_Preview:=FALSE,
      Laser_Preview_Select:= 1,
      Laser_Blow:= FALSE,
-     Laser_Cover:= FALSE);
-//左軸
+	 Pos:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+	));
+	//左軸
     Jog_Gc: LaserJog:=( 
      X_P:= FALSE,
      X_N:= FALSE,
@@ -96,8 +103,12 @@ Jog_Ga: LaserJog:=(
      Laser_Preview:=FALSE,
      Laser_Preview_Select:= 1,
      Laser_Blow:= FALSE,
-     Laser_Cover:= FALSE);
-//下軸
+	 Pos:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+	));
+	//下軸
     Jog_Gd: LaserJog:=( 
      X_P:= FALSE,
      X_N:= FALSE,
@@ -111,37 +122,13 @@ Jog_Ga: LaserJog:=(
      Laser_Preview:=FALSE,
      Laser_Preview_Select:= 1,
      Laser_Blow:= FALSE,
-     Laser_Cover:= FALSE);
+     Laser_Cover:= FALSE,
+	 Pos:=(
+		X:=0,
+		Y:=0,
+		Z:=0
+	));
 
-	 // 左側-XYZ座標
-	 Ga_Pos:XYZ_Point:=(
-		X:=0,
-		Y:=0,
-		Z:=0
-		);
-	 // 上方-XYZ座標
-	Gb_Pos:XYZ_Point:=(
-		X:=0,
-		Y:=0,
-		Z:=0
-		);
-	 // 右側-XYZ座標
-	Gc_Pos:XYZ_Point:=(
-		X:=0,
-		Y:=0,
-		Z:=0
-		);
-	 // 下方-XYZ座標
-	Gd_Pos:XYZ_Point:=(
-		X:=0,
-		Y:=0,
-		Z:=0
-		);
-	 
-	 
-	 
-	 
-	 
 
  	//*自動加工 */
     Auto_Start:  BOOL;
@@ -228,7 +215,7 @@ Jog_Ga: LaserJog:=(
     StopPin_Down: BOOL;
     StopPin_Down_S: BOOL;
 
-MessageVar1:Message_Type:=( 
+	MessageVar1:Message_Type:=( 
       sv_iActAlarmCount:=0, //錯誤數量
       sv_Alarms:= '', //警告(陣列)
       sv_bMessageResetAll:= FALSE, //重置所有警報 boolean
@@ -238,8 +225,6 @@ MessageVar1:Message_Type:=(
       sv_iSelectedAlarmIndex:= 0, //清除選定的警報 int
       sv_bMessageUpdateAlarms:= FALSE //更新警報列表的觸發器 boolean
     );
-
-
 
 END_VAR]]></Declaration>
   </GVL>
