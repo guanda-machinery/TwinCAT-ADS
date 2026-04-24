@@ -29,7 +29,7 @@ STRUCT
      Z_N_S: BOOL;
      Z_H_S: BOOL;
      Laser_Preview:BOOL;
-     Laser_Preview_Select: INT	;
+     Laser_Preview_Select: INT;
      Laser_Blow: BOOL;
      Laser_Cover: BOOL;
 	 

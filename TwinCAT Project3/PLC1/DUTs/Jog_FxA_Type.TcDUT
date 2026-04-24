@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.18">
   <DUT Name="Jog_FxA_Type" Id="{8ecab233-1569-4116-90bd-1131c98c6bea}">
     <Declaration><![CDATA[TYPE Jog_FxA_Type :
 STRUCT

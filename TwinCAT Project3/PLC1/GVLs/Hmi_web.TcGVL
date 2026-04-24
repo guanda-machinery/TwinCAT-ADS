@@ -3,6 +3,8 @@
   <GVL Name="Hmi_web" Id="{eae48d12-bfed-42b4-9a4e-65b8156f88d3}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	// 機器狀態
+	State:INT;
 	// 點動速度
     Jog_Speed: INT;
 	// 油泵
